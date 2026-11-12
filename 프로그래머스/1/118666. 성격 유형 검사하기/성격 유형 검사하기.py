@@ -38,9 +38,9 @@ def solution(survey, choices):
             
         # 4면 넘어가기 continue
         if choice == 4:
-            score[mbti[0]] = score[mbti[0]] + plus
+            continue
             
-        # 5 ~ 7이면 후자 mbti[0]
+        # 5 ~ 7이면 후자 mbti[1]
         if 5 <= choice <=7:
             score[mbti[1]] = score[mbti[1]] + plus
     
