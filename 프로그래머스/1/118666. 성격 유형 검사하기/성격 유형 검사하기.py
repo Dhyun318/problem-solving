@@ -29,26 +29,11 @@ def solution(survey, choices):
         
         # 추가할 점수 선언
         plus = 0
-        
-        if choice == 1:
-            plus = 3
-        elif choice == 2:
-            plus = 2
-        elif choice == 3:
-            plus = 1
-        elif choice == 4:
-            plus = 0
-        elif choice == 5:
-            plus = 1
-        elif choice == 6:
-            plus = 2
-        elif choice == 7:
-            plus = 3
+        plus = abs(choice - 4)
         
         # 1 ~ 3이면 전자 mbti[0]
         if 1 <= choice <= 3:
             score[mbti[0]] = score[mbti[0]] + plus
-            
             
             
         # 4면 넘어가기 continue
